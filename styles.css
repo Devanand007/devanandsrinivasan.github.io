@@ -1,82 +1,91 @@
-/* Apply a universal box-sizing */
-* {
-    box-sizing: border-box;
+/* styles.css */
+
+/* Reset default margin and padding */
+body, h1, h2, h3, p, ul, li {
     margin: 0;
     padding: 0;
 }
 
-/* Maintain a consistent baseline */
+/* Set a background color and font for the whole page */
 body {
+    background-color: #f2f2f2;
     font-family: Arial, sans-serif;
-    font-size: 16px;
-    line-height: 1.6;
-    margin: 0;
-    padding: 0;
 }
 
-/* Add some spacing to the top and bottom of sections */
-section {
-    padding: 20px 0;
-}
-
-/* Improve readability of headers */
-h1, h2, h3 {
-    margin-bottom: 10px;
-}
-
-/* Style the header for better visibility */
+/* Style the header */
 header {
     background-color: #333;
     color: white;
     text-align: center;
-    padding: 20px 0;
+    padding: 1em 0;
 }
 
 /* Style the navigation bar */
-nav {
-    background-color: #f5f5f5;
-    padding: 10px 0;
-    text-align: center;
-}
-
 nav ul {
-    list-style-type: none;
+    list-style: none;
     display: flex;
     justify-content: center;
-    padding: 0;
+    background-color: #444;
+    padding: 0.5em 0;
 }
 
 nav li {
-    margin: 0 10px;
+    margin: 0 1em;
 }
 
 nav a {
     text-decoration: none;
-    color: #333;
-    padding: 10px;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-/* Highlight navigation links on hover */
-nav a:hover {
-    background-color: #333;
     color: white;
+    font-weight: bold;
 }
 
-/* Center-align text in the footer */
+/* Style the sections */
+section {
+    padding: 2em;
+}
+
+/* Style the about section */
+#about {
+    background-color: white;
+    border-bottom: 1px solid #ddd;
+}
+
+/* Style the skills section */
+#skills ul {
+    columns: 2;
+    list-style: none;
+    padding: 0;
+}
+
+#skills li {
+    margin-bottom: 0.5em;
+}
+
+/* Style the experience section */
+#experience ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+#experience li {
+    margin-bottom: 0.5em;
+}
+
+/* Style the education section */
+#education p {
+    font-style: italic;
+    margin-top: 0.5em;
+}
+
+/* Style the contact section */
+#contact p {
+    margin-bottom: 0.5em;
+}
+
+/* Style the footer */
 footer {
+    text-align: center;
+    padding: 1em 0;
     background-color: #333;
     color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-/* Ensure footer stays at the bottom of the page */
-html, body {
-    height: 100%;
-}
-
-/* Provide spacing between footer and content */
-section:last-child {
-    margin-bottom: 60px; /* Adjust as needed */
 }
